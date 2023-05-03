@@ -1,0 +1,2291 @@
+{
+  "id": "https://openalex.org/A2800916882",
+  "orcid": null,
+  "display_name": "Phillip Bloodworth",
+  "display_name_alternatives": [],
+  "works_count": 1,
+  "cited_by_count": 1,
+  "most_cited_work": "Pediatric golf cart trauma: Not par for the course (2020)",
+  "summary_stats": {
+    "2yr_mean_citedness": null,
+    "h_index": 1,
+    "i10_index": null
+  },
+  "ids": {
+    "openalex": "https://openalex.org/A2800916882",
+    "mag": 2800916882
+  },
+  "last_known_institution": {
+    "id": "https://openalex.org/I150149174",
+    "ror": "https://ror.org/04bk7v425",
+    "display_name": "Mercer University",
+    "country_code": "US",
+    "type": "education"
+  },
+  "counts_by_year": [
+    {
+      "year": 2021,
+      "works_count": 0,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2020,
+      "works_count": 1,
+      "cited_by_count": 0
+    }
+  ],
+  "x_concepts": [
+    {
+      "id": "https://openalex.org/C15744967",
+      "wikidata": "https://www.wikidata.org/wiki/Q9418",
+      "display_name": "Psychology",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C17624336",
+      "wikidata": "https://www.wikidata.org/wiki/Q461644",
+      "display_name": "Glasgow Coma Scale",
+      "level": 2,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C17744445",
+      "wikidata": "https://www.wikidata.org/wiki/Q36442",
+      "display_name": "Political science",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C42219234",
+      "wikidata": "https://www.wikidata.org/wiki/Q131130",
+      "display_name": "Anesthesia",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C71924100",
+      "wikidata": "https://www.wikidata.org/wiki/Q11190",
+      "display_name": "Medicine",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C78519656",
+      "wikidata": "https://www.wikidata.org/wiki/Q101333",
+      "display_name": "Mechanical engineering",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C85004164",
+      "wikidata": "https://www.wikidata.org/wiki/Q1089964",
+      "display_name": "Injury Severity Score",
+      "level": 4,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C86803240",
+      "wikidata": "https://www.wikidata.org/wiki/Q420",
+      "display_name": "Biology",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C95457728",
+      "wikidata": "https://www.wikidata.org/wiki/Q309",
+      "display_name": "History",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C99454951",
+      "wikidata": "https://www.wikidata.org/wiki/Q932068",
+      "display_name": "Environmental health",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C105702510",
+      "wikidata": "https://www.wikidata.org/wiki/Q514",
+      "display_name": "Anatomy",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C118552586",
+      "wikidata": "https://www.wikidata.org/wiki/Q7867",
+      "display_name": "Psychiatry",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C126322002",
+      "wikidata": "https://www.wikidata.org/wiki/Q11180",
+      "display_name": "Internal medicine",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C127313418",
+      "wikidata": "https://www.wikidata.org/wiki/Q1069",
+      "display_name": "Geology",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C141071460",
+      "wikidata": "https://www.wikidata.org/wiki/Q40821",
+      "display_name": "Surgery",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C142724271",
+      "wikidata": "https://www.wikidata.org/wiki/Q7208",
+      "display_name": "Pathology",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C144024400",
+      "wikidata": "https://www.wikidata.org/wiki/Q21201",
+      "display_name": "Sociology",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C149923435",
+      "wikidata": "https://www.wikidata.org/wiki/Q37732",
+      "display_name": "Demography",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C151730666",
+      "wikidata": "https://www.wikidata.org/wiki/Q7205",
+      "display_name": "Paleontology",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C166957645",
+      "wikidata": "https://www.wikidata.org/wiki/Q23498",
+      "display_name": "Archaeology",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C167135981",
+      "wikidata": "https://www.wikidata.org/wiki/Q2146302",
+      "display_name": "Retrospective cohort study",
+      "level": 2,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C187212893",
+      "wikidata": "https://www.wikidata.org/wiki/Q123028",
+      "display_name": "Pediatrics",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C190385971",
+      "wikidata": "https://www.wikidata.org/wiki/Q373494",
+      "display_name": "Injury prevention",
+      "level": 3,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C194828623",
+      "wikidata": "https://www.wikidata.org/wiki/Q2861470",
+      "display_name": "Emergency medicine",
+      "level": 1,
+      "score": 100
+    }
+  ],
+  "works_api_url": "https://api.openalex.org/works?filter=author.id:A2800916882",
+  "updated_date": "2023-03-23T02:27:55.538955",
+  "created_date": "2018-05-17"
+}
+{
+  "id": "https://openalex.org/A2902859404",
+  "orcid": null,
+  "display_name": "Daniel Loof",
+  "display_name_alternatives": [],
+  "works_count": 6,
+  "cited_by_count": 19,
+  "most_cited_work": "Ligand-Linked Nanoparticles-Based Hydrogen Gas Sensor with Excellent Homogeneous Temperature Field and a Comparative Stability Evaluation of Different Ligand-Linked Catalysts (2019)",
+  "summary_stats": {
+    "2yr_mean_citedness": 0.5,
+    "h_index": 3,
+    "i10_index": null
+  },
+  "ids": {
+    "openalex": "https://openalex.org/A2902859404",
+    "mag": 2902859404
+  },
+  "last_known_institution": {
+    "id": "https://openalex.org/I180437899",
+    "ror": "https://ror.org/04ers2y35",
+    "display_name": "University of Bremen",
+    "country_code": "DE",
+    "type": "education"
+  },
+  "counts_by_year": [
+    {
+      "year": 2023,
+      "works_count": 0,
+      "cited_by_count": 7
+    },
+    {
+      "year": 2022,
+      "works_count": 0,
+      "cited_by_count": 3
+    },
+    {
+      "year": 2021,
+      "works_count": 1,
+      "cited_by_count": 4
+    },
+    {
+      "year": 2020,
+      "works_count": 1,
+      "cited_by_count": 6
+    },
+    {
+      "year": 2019,
+      "works_count": 3,
+      "cited_by_count": 2
+    },
+    {
+      "year": 2018,
+      "works_count": 1,
+      "cited_by_count": 0
+    }
+  ],
+  "x_concepts": [
+    {
+      "id": "https://openalex.org/C42360764",
+      "wikidata": "https://www.wikidata.org/wiki/Q83588",
+      "display_name": "Chemical engineering",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C55493867",
+      "wikidata": "https://www.wikidata.org/wiki/Q7094",
+      "display_name": "Biochemistry",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C62520636",
+      "wikidata": "https://www.wikidata.org/wiki/Q944",
+      "display_name": "Quantum mechanics",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C86803240",
+      "wikidata": "https://www.wikidata.org/wiki/Q420",
+      "display_name": "Biology",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C121332964",
+      "wikidata": "https://www.wikidata.org/wiki/Q413",
+      "display_name": "Physics",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C161790260",
+      "wikidata": "https://www.wikidata.org/wiki/Q82264",
+      "display_name": "Catalysis",
+      "level": 2,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C178790620",
+      "wikidata": "https://www.wikidata.org/wiki/Q11351",
+      "display_name": "Organic chemistry",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C185592680",
+      "wikidata": "https://www.wikidata.org/wiki/Q2329",
+      "display_name": "Chemistry",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C192562407",
+      "wikidata": "https://www.wikidata.org/wiki/Q228736",
+      "display_name": "Materials science",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C171250308",
+      "wikidata": "https://www.wikidata.org/wiki/Q11468",
+      "display_name": "Nanotechnology",
+      "level": 1,
+      "score": 83.3
+    },
+    {
+      "id": "https://openalex.org/C30262120",
+      "wikidata": "https://www.wikidata.org/wiki/Q613490",
+      "display_name": "Hydrogen sensor",
+      "level": 4,
+      "score": 66.7
+    },
+    {
+      "id": "https://openalex.org/C33923547",
+      "wikidata": "https://www.wikidata.org/wiki/Q395",
+      "display_name": "Mathematics",
+      "level": 0,
+      "score": 66.7
+    },
+    {
+      "id": "https://openalex.org/C43617362",
+      "wikidata": "https://www.wikidata.org/wiki/Q170050",
+      "display_name": "Chromatography",
+      "level": 1,
+      "score": 66.7
+    },
+    {
+      "id": "https://openalex.org/C97355855",
+      "wikidata": "https://www.wikidata.org/wiki/Q11473",
+      "display_name": "Thermodynamics",
+      "level": 1,
+      "score": 66.7
+    },
+    {
+      "id": "https://openalex.org/C105795698",
+      "wikidata": "https://www.wikidata.org/wiki/Q12483",
+      "display_name": "Statistics",
+      "level": 1,
+      "score": 66.7
+    },
+    {
+      "id": "https://openalex.org/C155672457",
+      "wikidata": "https://www.wikidata.org/wiki/Q61231",
+      "display_name": "Nanoparticle",
+      "level": 2,
+      "score": 66.7
+    },
+    {
+      "id": "https://openalex.org/C159985019",
+      "wikidata": "https://www.wikidata.org/wiki/Q181790",
+      "display_name": "Composite material",
+      "level": 1,
+      "score": 66.7
+    },
+    {
+      "id": "https://openalex.org/C502130503",
+      "wikidata": "https://www.wikidata.org/wiki/Q1089",
+      "display_name": "Palladium",
+      "level": 3,
+      "score": 66.7
+    },
+    {
+      "id": "https://openalex.org/C512968161",
+      "wikidata": "https://www.wikidata.org/wiki/Q556",
+      "display_name": "Hydrogen",
+      "level": 2,
+      "score": 66.7
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 50
+    },
+    {
+      "id": "https://openalex.org/C63024428",
+      "wikidata": "https://www.wikidata.org/wiki/Q552456",
+      "display_name": "Thermoelectric effect",
+      "level": 2,
+      "score": 50
+    },
+    {
+      "id": "https://openalex.org/C107872376",
+      "wikidata": "https://www.wikidata.org/wiki/Q321355",
+      "display_name": "Environmental chemistry",
+      "level": 1,
+      "score": 50
+    },
+    {
+      "id": "https://openalex.org/C113196181",
+      "wikidata": "https://www.wikidata.org/wiki/Q485223",
+      "display_name": "Analytical Chemistry (journal)",
+      "level": 2,
+      "score": 50
+    },
+    {
+      "id": "https://openalex.org/C119599485",
+      "wikidata": "https://www.wikidata.org/wiki/Q43035",
+      "display_name": "Electrical engineering",
+      "level": 1,
+      "score": 50
+    }
+  ],
+  "works_api_url": "https://api.openalex.org/works?filter=author.id:A2902859404",
+  "updated_date": "2023-03-23T02:27:55.596810",
+  "created_date": "2018-12-11"
+}
+{
+  "id": "https://openalex.org/A3137547645",
+  "orcid": null,
+  "display_name": "Andrea Gianelli Castiglione",
+  "display_name_alternatives": [],
+  "works_count": 1,
+  "cited_by_count": 5,
+  "most_cited_work": "Circulating CXCL10 and IL-6 in solid organ donors after brain death predict graft outcomes (2021)",
+  "summary_stats": {
+    "2yr_mean_citedness": 3,
+    "h_index": 1,
+    "i10_index": null
+  },
+  "ids": {
+    "openalex": "https://openalex.org/A3137547645",
+    "mag": 3137547645
+  },
+  "last_known_institution": {
+    "id": "https://openalex.org/I4210123105",
+    "ror": "https://ror.org/02t96cy48",
+    "display_name": "Azienda Ospedaliera S.Maria",
+    "country_code": "IT",
+    "type": "healthcare"
+  },
+  "counts_by_year": [
+    {
+      "year": 2023,
+      "works_count": 0,
+      "cited_by_count": 2
+    },
+    {
+      "year": 2022,
+      "works_count": 0,
+      "cited_by_count": 3
+    },
+    {
+      "year": 2021,
+      "works_count": 1,
+      "cited_by_count": 0
+    }
+  ],
+  "x_concepts": [
+    {
+      "id": "https://openalex.org/C5858377",
+      "wikidata": "https://www.wikidata.org/wiki/Q986112",
+      "display_name": "CXCL10",
+      "level": 4,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C8891405",
+      "wikidata": "https://www.wikidata.org/wiki/Q1059",
+      "display_name": "Immune system",
+      "level": 2,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C13373296",
+      "wikidata": "https://www.wikidata.org/wiki/Q421866",
+      "display_name": "Chemokine",
+      "level": 3,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C15744967",
+      "wikidata": "https://www.wikidata.org/wiki/Q9418",
+      "display_name": "Psychology",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C29374701",
+      "wikidata": "https://www.wikidata.org/wiki/Q1931388",
+      "display_name": "Cause of death",
+      "level": 3,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C54355233",
+      "wikidata": "https://www.wikidata.org/wiki/Q7162",
+      "display_name": "Genetics",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C55493867",
+      "wikidata": "https://www.wikidata.org/wiki/Q7094",
+      "display_name": "Biochemistry",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C71924100",
+      "wikidata": "https://www.wikidata.org/wiki/Q11190",
+      "display_name": "Medicine",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C86803240",
+      "wikidata": "https://www.wikidata.org/wiki/Q420",
+      "display_name": "Biology",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C90924648",
+      "wikidata": "https://www.wikidata.org/wiki/Q120569",
+      "display_name": "Gastroenterology",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C118552586",
+      "wikidata": "https://www.wikidata.org/wiki/Q7867",
+      "display_name": "Psychiatry",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C126322002",
+      "wikidata": "https://www.wikidata.org/wiki/Q11180",
+      "display_name": "Internal medicine",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C141071460",
+      "wikidata": "https://www.wikidata.org/wiki/Q40821",
+      "display_name": "Surgery",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C142724271",
+      "wikidata": "https://www.wikidata.org/wiki/Q7208",
+      "display_name": "Pathology",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C170493617",
+      "wikidata": "https://www.wikidata.org/wiki/Q208467",
+      "display_name": "Receptor",
+      "level": 2,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C177713679",
+      "wikidata": "https://www.wikidata.org/wiki/Q679690",
+      "display_name": "Intensive care medicine",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C185592680",
+      "wikidata": "https://www.wikidata.org/wiki/Q2329",
+      "display_name": "Chemistry",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C203014093",
+      "wikidata": "https://www.wikidata.org/wiki/Q101929",
+      "display_name": "Immunology",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C2776376669",
+      "wikidata": "https://www.wikidata.org/wiki/Q5094647",
+      "display_name": "Intensive care unit",
+      "level": 2,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C2776914184",
+      "wikidata": "https://www.wikidata.org/wiki/Q101991",
+      "display_name": "Inflammation",
+      "level": 2,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C2779134260",
+      "wikidata": "https://www.wikidata.org/wiki/Q12136",
+      "display_name": "Disease",
+      "level": 2,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C2911091166",
+      "wikidata": "https://www.wikidata.org/wiki/Q106419912",
+      "display_name": "Transplantation",
+      "level": 2,
+      "score": 100
+    }
+  ],
+  "works_api_url": "https://api.openalex.org/works?filter=author.id:A3137547645",
+  "updated_date": "2023-03-23T02:27:55.844459",
+  "created_date": "2021-03-29"
+}
+{
+  "id": "https://openalex.org/A4208815255",
+  "orcid": "https://orcid.org/0000-0003-1682-9908",
+  "display_name": "Charlotte Amy",
+  "display_name_alternatives": [],
+  "works_count": 3,
+  "cited_by_count": 9,
+  "most_cited_work": "Are native phosphate solubilizing bacteria a relevant alternative to mineral fertilizations for crops? Part I. when rhizobacteria meet plant P ... (2022)",
+  "summary_stats": {
+    "2yr_mean_citedness": null,
+    "h_index": 2,
+    "i10_index": null
+  },
+  "ids": {
+    "openalex": "https://openalex.org/A4208815255",
+    "orcid": "https://orcid.org/0000-0003-1682-9908"
+  },
+  "last_known_institution": {
+    "id": "https://openalex.org/I98702875",
+    "ror": "https://ror.org/051kpcy16",
+    "display_name": "Université de Caen Normandie",
+    "country_code": "FR",
+    "type": "education"
+  },
+  "counts_by_year": [
+    {
+      "year": 2023,
+      "works_count": 0,
+      "cited_by_count": 4
+    },
+    {
+      "year": 2022,
+      "works_count": 3,
+      "cited_by_count": 14
+    }
+  ],
+  "x_concepts": [
+    {
+      "id": "https://openalex.org/C6557445",
+      "wikidata": "https://www.wikidata.org/wiki/Q173113",
+      "display_name": "Agronomy",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C54355233",
+      "wikidata": "https://www.wikidata.org/wiki/Q7162",
+      "display_name": "Genetics",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C59822182",
+      "wikidata": "https://www.wikidata.org/wiki/Q441",
+      "display_name": "Botany",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C86626682",
+      "wikidata": "https://www.wikidata.org/wiki/Q1124578",
+      "display_name": "Rhizosphere",
+      "level": 3,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C86803240",
+      "wikidata": "https://www.wikidata.org/wiki/Q420",
+      "display_name": "Biology",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C127313418",
+      "wikidata": "https://www.wikidata.org/wiki/Q1069",
+      "display_name": "Geology",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C144027150",
+      "wikidata": "https://www.wikidata.org/wiki/Q48803",
+      "display_name": "Horticulture",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C151730666",
+      "wikidata": "https://www.wikidata.org/wiki/Q7205",
+      "display_name": "Paleontology",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C523546767",
+      "wikidata": "https://www.wikidata.org/wiki/Q10876",
+      "display_name": "Bacteria",
+      "level": 2,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C1422475",
+      "wikidata": "https://www.wikidata.org/wiki/Q7320735",
+      "display_name": "Rhizobacteria",
+      "level": 4,
+      "score": 50
+    },
+    {
+      "id": "https://openalex.org/C18903297",
+      "wikidata": "https://www.wikidata.org/wiki/Q7150",
+      "display_name": "Ecology",
+      "level": 1,
+      "score": 50
+    },
+    {
+      "id": "https://openalex.org/C31903555",
+      "wikidata": "https://www.wikidata.org/wiki/Q1637030",
+      "display_name": "Food science",
+      "level": 1,
+      "score": 50
+    },
+    {
+      "id": "https://openalex.org/C97137747",
+      "wikidata": "https://www.wikidata.org/wiki/Q38112",
+      "display_name": "Forestry",
+      "level": 1,
+      "score": 50
+    },
+    {
+      "id": "https://openalex.org/C121332964",
+      "wikidata": "https://www.wikidata.org/wiki/Q413",
+      "display_name": "Physics",
+      "level": 0,
+      "score": 50
+    },
+    {
+      "id": "https://openalex.org/C137580998",
+      "wikidata": "https://www.wikidata.org/wiki/Q235352",
+      "display_name": "Crop",
+      "level": 2,
+      "score": 50
+    },
+    {
+      "id": "https://openalex.org/C185592680",
+      "wikidata": "https://www.wikidata.org/wiki/Q2329",
+      "display_name": "Chemistry",
+      "level": 0,
+      "score": 50
+    },
+    {
+      "id": "https://openalex.org/C192039558",
+      "wikidata": "https://www.wikidata.org/wiki/Q3595890",
+      "display_name": "Biofertilizer",
+      "level": 2,
+      "score": 50
+    },
+    {
+      "id": "https://openalex.org/C205649164",
+      "wikidata": "https://www.wikidata.org/wiki/Q1071",
+      "display_name": "Geography",
+      "level": 0,
+      "score": 50
+    },
+    {
+      "id": "https://openalex.org/C2775997218",
+      "wikidata": "https://www.wikidata.org/wiki/Q1166350",
+      "display_name": "Sativum",
+      "level": 2,
+      "score": 50
+    },
+    {
+      "id": "https://openalex.org/C2776689966",
+      "wikidata": "https://www.wikidata.org/wiki/Q17142415",
+      "display_name": "Phosphate solubilizing bacteria",
+      "level": 5,
+      "score": 50
+    },
+    {
+      "id": "https://openalex.org/C2779726014",
+      "wikidata": "https://www.wikidata.org/wiki/Q177932",
+      "display_name": "Rapeseed",
+      "level": 2,
+      "score": 50
+    },
+    {
+      "id": "https://openalex.org/C2781463711",
+      "wikidata": "https://www.wikidata.org/wiki/Q131143",
+      "display_name": "Pseudomonas",
+      "level": 3,
+      "score": 50
+    }
+  ],
+  "works_api_url": "https://api.openalex.org/works?filter=author.id:A4208815255",
+  "updated_date": "2023-03-23T02:27:56.010438",
+  "created_date": "2022-01-29"
+}
+{
+  "id": "https://openalex.org/A2043233140",
+  "orcid": "https://orcid.org/0000-0001-9482-944X",
+  "display_name": "Mayumi Hangai",
+  "display_name_alternatives": [],
+  "works_count": 13,
+  "cited_by_count": 71,
+  "most_cited_work": "Neonatal Kawasaki disease: case report and data from nationwide survey in Japan (2014)",
+  "summary_stats": {
+    "2yr_mean_citedness": 3.3333333333333335,
+    "h_index": 5,
+    "i10_index": 3
+  },
+  "ids": {
+    "openalex": "https://openalex.org/A2043233140",
+    "orcid": "https://orcid.org/0000-0001-9482-944X",
+    "mag": 2043233140
+  },
+  "last_known_institution": {
+    "id": "https://openalex.org/I74801974",
+    "ror": "https://ror.org/057zh3y96",
+    "display_name": "University of Tokyo",
+    "country_code": "JP",
+    "type": "education"
+  },
+  "counts_by_year": [
+    {
+      "year": 2023,
+      "works_count": 0,
+      "cited_by_count": 6
+    },
+    {
+      "year": 2022,
+      "works_count": 2,
+      "cited_by_count": 19
+    },
+    {
+      "year": 2021,
+      "works_count": 2,
+      "cited_by_count": 13
+    },
+    {
+      "year": 2020,
+      "works_count": 1,
+      "cited_by_count": 11
+    },
+    {
+      "year": 2019,
+      "works_count": 3,
+      "cited_by_count": 4
+    },
+    {
+      "year": 2018,
+      "works_count": 0,
+      "cited_by_count": 11
+    },
+    {
+      "year": 2017,
+      "works_count": 1,
+      "cited_by_count": 3
+    },
+    {
+      "year": 2016,
+      "works_count": 0,
+      "cited_by_count": 4
+    },
+    {
+      "year": 2015,
+      "works_count": 0,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2014,
+      "works_count": 3,
+      "cited_by_count": 0
+    },
+    {
+      "year": 2013,
+      "works_count": 1,
+      "cited_by_count": 0
+    }
+  ],
+  "x_concepts": [
+    {
+      "id": "https://openalex.org/C71924100",
+      "wikidata": "https://www.wikidata.org/wiki/Q11190",
+      "display_name": "Medicine",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C126322002",
+      "wikidata": "https://www.wikidata.org/wiki/Q11180",
+      "display_name": "Internal medicine",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C86803240",
+      "wikidata": "https://www.wikidata.org/wiki/Q420",
+      "display_name": "Biology",
+      "level": 0,
+      "score": 75
+    },
+    {
+      "id": "https://openalex.org/C142724271",
+      "wikidata": "https://www.wikidata.org/wiki/Q7208",
+      "display_name": "Pathology",
+      "level": 1,
+      "score": 75
+    },
+    {
+      "id": "https://openalex.org/C2779134260",
+      "wikidata": "https://www.wikidata.org/wiki/Q12136",
+      "display_name": "Disease",
+      "level": 2,
+      "score": 66.7
+    },
+    {
+      "id": "https://openalex.org/C54355233",
+      "wikidata": "https://www.wikidata.org/wiki/Q7162",
+      "display_name": "Genetics",
+      "level": 1,
+      "score": 58.3
+    },
+    {
+      "id": "https://openalex.org/C15744967",
+      "wikidata": "https://www.wikidata.org/wiki/Q9418",
+      "display_name": "Psychology",
+      "level": 0,
+      "score": 50
+    },
+    {
+      "id": "https://openalex.org/C141071460",
+      "wikidata": "https://www.wikidata.org/wiki/Q40821",
+      "display_name": "Surgery",
+      "level": 1,
+      "score": 50
+    },
+    {
+      "id": "https://openalex.org/C203014093",
+      "wikidata": "https://www.wikidata.org/wiki/Q101929",
+      "display_name": "Immunology",
+      "level": 1,
+      "score": 41.7
+    },
+    {
+      "id": "https://openalex.org/C33923547",
+      "wikidata": "https://www.wikidata.org/wiki/Q395",
+      "display_name": "Mathematics",
+      "level": 0,
+      "score": 33.3
+    },
+    {
+      "id": "https://openalex.org/C89623803",
+      "wikidata": "https://www.wikidata.org/wiki/Q12184",
+      "display_name": "Pandemic",
+      "level": 5,
+      "score": 33.3
+    },
+    {
+      "id": "https://openalex.org/C121332964",
+      "wikidata": "https://www.wikidata.org/wiki/Q413",
+      "display_name": "Physics",
+      "level": 0,
+      "score": 33.3
+    },
+    {
+      "id": "https://openalex.org/C187212893",
+      "wikidata": "https://www.wikidata.org/wiki/Q123028",
+      "display_name": "Pediatrics",
+      "level": 1,
+      "score": 33.3
+    },
+    {
+      "id": "https://openalex.org/C524204448",
+      "wikidata": "https://www.wikidata.org/wiki/Q788926",
+      "display_name": "Infectious disease (medical specialty)",
+      "level": 3,
+      "score": 33.3
+    },
+    {
+      "id": "https://openalex.org/C3008058167",
+      "wikidata": "https://www.wikidata.org/wiki/Q84263196",
+      "display_name": "Coronavirus disease 2019 (COVID-19)",
+      "level": 4,
+      "score": 33.3
+    },
+    {
+      "id": "https://openalex.org/C55493867",
+      "wikidata": "https://www.wikidata.org/wiki/Q7094",
+      "display_name": "Biochemistry",
+      "level": 1,
+      "score": 25
+    },
+    {
+      "id": "https://openalex.org/C104317684",
+      "wikidata": "https://www.wikidata.org/wiki/Q7187",
+      "display_name": "Gene",
+      "level": 2,
+      "score": 25
+    },
+    {
+      "id": "https://openalex.org/C105795698",
+      "wikidata": "https://www.wikidata.org/wiki/Q12483",
+      "display_name": "Statistics",
+      "level": 1,
+      "score": 25
+    },
+    {
+      "id": "https://openalex.org/C118552586",
+      "wikidata": "https://www.wikidata.org/wiki/Q7867",
+      "display_name": "Psychiatry",
+      "level": 1,
+      "score": 25
+    },
+    {
+      "id": "https://openalex.org/C185592680",
+      "wikidata": "https://www.wikidata.org/wiki/Q2329",
+      "display_name": "Chemistry",
+      "level": 0,
+      "score": 25
+    },
+    {
+      "id": "https://openalex.org/C512399662",
+      "wikidata": "https://www.wikidata.org/wiki/Q3505712",
+      "display_name": "Family medicine",
+      "level": 1,
+      "score": 25
+    },
+    {
+      "id": "https://openalex.org/C2778461978",
+      "wikidata": "https://www.wikidata.org/wiki/Q29496",
+      "display_name": "Leukemia",
+      "level": 2,
+      "score": 25
+    }
+  ],
+  "works_api_url": "https://api.openalex.org/works?filter=author.id:A2043233140",
+  "updated_date": "2023-03-23T02:27:55.220289",
+  "created_date": "2016-06-24"
+}
+{
+  "id": "https://openalex.org/A4227693517",
+  "orcid": null,
+  "display_name": "Dikioye Emmanuel Peters",
+  "display_name_alternatives": [],
+  "works_count": 3,
+  "cited_by_count": 9,
+  "most_cited_work": "Potential Human Health Risk Assessment of Heavy Metals via Consumption of Root Tubers from Ogoniland, Rivers State, Nigeria (2018)",
+  "summary_stats": {
+    "2yr_mean_citedness": null,
+    "h_index": 1,
+    "i10_index": null
+  },
+  "ids": {
+    "openalex": "https://openalex.org/A4227693517"
+  },
+  "last_known_institution": null,
+  "counts_by_year": [
+    {
+      "year": 2023,
+      "works_count": 0,
+      "cited_by_count": 2
+    },
+    {
+      "year": 2022,
+      "works_count": 2,
+      "cited_by_count": 0
+    },
+    {
+      "year": 2021,
+      "works_count": 0,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2020,
+      "works_count": 0,
+      "cited_by_count": 5
+    },
+    {
+      "year": 2019,
+      "works_count": 0,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2018,
+      "works_count": 1,
+      "cited_by_count": 0
+    }
+  ],
+  "x_concepts": [
+    {
+      "id": "https://openalex.org/C59822182",
+      "wikidata": "https://www.wikidata.org/wiki/Q441",
+      "display_name": "Botany",
+      "level": 1,
+      "score": 300
+    },
+    {
+      "id": "https://openalex.org/C86803240",
+      "wikidata": "https://www.wikidata.org/wiki/Q420",
+      "display_name": "Biology",
+      "level": 0,
+      "score": 300
+    },
+    {
+      "id": "https://openalex.org/C185592680",
+      "wikidata": "https://www.wikidata.org/wiki/Q2329",
+      "display_name": "Chemistry",
+      "level": 0,
+      "score": 300
+    },
+    {
+      "id": "https://openalex.org/C18903297",
+      "wikidata": "https://www.wikidata.org/wiki/Q7150",
+      "display_name": "Ecology",
+      "level": 1,
+      "score": 200
+    },
+    {
+      "id": "https://openalex.org/C71924100",
+      "wikidata": "https://www.wikidata.org/wiki/Q11190",
+      "display_name": "Medicine",
+      "level": 0,
+      "score": 200
+    },
+    {
+      "id": "https://openalex.org/C178790620",
+      "wikidata": "https://www.wikidata.org/wiki/Q11351",
+      "display_name": "Organic chemistry",
+      "level": 1,
+      "score": 200
+    },
+    {
+      "id": "https://openalex.org/C12174686",
+      "wikidata": "https://www.wikidata.org/wiki/Q1058438",
+      "display_name": "Risk assessment",
+      "level": 2,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C31903555",
+      "wikidata": "https://www.wikidata.org/wiki/Q1637030",
+      "display_name": "Food science",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C33070731",
+      "wikidata": "https://www.wikidata.org/wiki/Q7218",
+      "display_name": "Toxicology",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C38652104",
+      "wikidata": "https://www.wikidata.org/wiki/Q3510521",
+      "display_name": "Computer security",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C40231798",
+      "wikidata": "https://www.wikidata.org/wiki/Q1333743",
+      "display_name": "Composition (language)",
+      "level": 2,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C41895202",
+      "wikidata": "https://www.wikidata.org/wiki/Q8162",
+      "display_name": "Linguistics",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C42972112",
+      "wikidata": "https://www.wikidata.org/wiki/Q170201",
+      "display_name": "Veterinary medicine",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C43617362",
+      "wikidata": "https://www.wikidata.org/wiki/Q170050",
+      "display_name": "Chromatography",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C99454951",
+      "wikidata": "https://www.wikidata.org/wiki/Q932068",
+      "display_name": "Environmental health",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C107872376",
+      "wikidata": "https://www.wikidata.org/wiki/Q321355",
+      "display_name": "Environmental chemistry",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C112570922",
+      "wikidata": "https://www.wikidata.org/wiki/Q60528603",
+      "display_name": "Contamination",
+      "level": 2,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C124952713",
+      "wikidata": "https://www.wikidata.org/wiki/Q8242",
+      "display_name": "Literature",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C138885662",
+      "wikidata": "https://www.wikidata.org/wiki/Q5891",
+      "display_name": "Philosophy",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C140793950",
+      "wikidata": "https://www.wikidata.org/wiki/Q168091",
+      "display_name": "Animal science",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C142362112",
+      "wikidata": "https://www.wikidata.org/wiki/Q735",
+      "display_name": "Art",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C142796444",
+      "wikidata": "https://www.wikidata.org/wiki/Q181394",
+      "display_name": "Nutrient",
+      "level": 2,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C144027150",
+      "wikidata": "https://www.wikidata.org/wiki/Q48803",
+      "display_name": "Horticulture",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C162324750",
+      "wikidata": "https://www.wikidata.org/wiki/Q8134",
+      "display_name": "Economics",
+      "level": 0,
+      "score": 100
+    }
+  ],
+  "works_api_url": "https://api.openalex.org/works?filter=author.id:A4227693517",
+  "updated_date": "2023-03-23T02:28:41.653330",
+  "created_date": "2022-05-05"
+}
+{
+  "id": "https://openalex.org/A2104057386",
+  "orcid": "https://orcid.org/0000-0002-6057-4394",
+  "display_name": "Josef Johnsson",
+  "display_name_alternatives": [],
+  "works_count": 13,
+  "cited_by_count": 120,
+  "most_cited_work": "Anti-icing of road surfaces using Hydronic Heating Pavement with low temperature (2018)",
+  "summary_stats": {
+    "2yr_mean_citedness": 6,
+    "h_index": 5,
+    "i10_index": 5
+  },
+  "ids": {
+    "openalex": "https://openalex.org/A2104057386",
+    "orcid": "https://orcid.org/0000-0002-6057-4394",
+    "scopus": "http://www.scopus.com/inward/authorDetails.url?authorID=24311248600&partnerID=MN8TOARS",
+    "mag": 2104057386
+  },
+  "last_known_institution": {
+    "id": "https://openalex.org/I66862912",
+    "ror": "https://ror.org/040wg7k59",
+    "display_name": "Chalmers University of Technology",
+    "country_code": "SE",
+    "type": "education"
+  },
+  "counts_by_year": [
+    {
+      "year": 2023,
+      "works_count": 0,
+      "cited_by_count": 10
+    },
+    {
+      "year": 2022,
+      "works_count": 0,
+      "cited_by_count": 42
+    },
+    {
+      "year": 2021,
+      "works_count": 0,
+      "cited_by_count": 37
+    },
+    {
+      "year": 2020,
+      "works_count": 1,
+      "cited_by_count": 35
+    },
+    {
+      "year": 2019,
+      "works_count": 3,
+      "cited_by_count": 11
+    },
+    {
+      "year": 2018,
+      "works_count": 2,
+      "cited_by_count": 6
+    },
+    {
+      "year": 2017,
+      "works_count": 3,
+      "cited_by_count": 3
+    },
+    {
+      "year": 2016,
+      "works_count": 3,
+      "cited_by_count": 0
+    },
+    {
+      "year": 2012,
+      "works_count": 1,
+      "cited_by_count": 0
+    }
+  ],
+  "x_concepts": [
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C39432304",
+      "wikidata": "https://www.wikidata.org/wiki/Q188847",
+      "display_name": "Environmental science",
+      "level": 0,
+      "score": 91.7
+    },
+    {
+      "id": "https://openalex.org/C121332964",
+      "wikidata": "https://www.wikidata.org/wiki/Q413",
+      "display_name": "Physics",
+      "level": 0,
+      "score": 83.3
+    },
+    {
+      "id": "https://openalex.org/C205649164",
+      "wikidata": "https://www.wikidata.org/wiki/Q1071",
+      "display_name": "Geography",
+      "level": 0,
+      "score": 83.3
+    },
+    {
+      "id": "https://openalex.org/C127313418",
+      "wikidata": "https://www.wikidata.org/wiki/Q1069",
+      "display_name": "Geology",
+      "level": 0,
+      "score": 66.7
+    },
+    {
+      "id": "https://openalex.org/C153294291",
+      "wikidata": "https://www.wikidata.org/wiki/Q25261",
+      "display_name": "Meteorology",
+      "level": 1,
+      "score": 66.7
+    },
+    {
+      "id": "https://openalex.org/C86803240",
+      "wikidata": "https://www.wikidata.org/wiki/Q420",
+      "display_name": "Biology",
+      "level": 0,
+      "score": 58.3
+    },
+    {
+      "id": "https://openalex.org/C18903297",
+      "wikidata": "https://www.wikidata.org/wiki/Q7150",
+      "display_name": "Ecology",
+      "level": 1,
+      "score": 50
+    },
+    {
+      "id": "https://openalex.org/C62520636",
+      "wikidata": "https://www.wikidata.org/wiki/Q944",
+      "display_name": "Quantum mechanics",
+      "level": 1,
+      "score": 41.7
+    },
+    {
+      "id": "https://openalex.org/C97355855",
+      "wikidata": "https://www.wikidata.org/wiki/Q11473",
+      "display_name": "Thermodynamics",
+      "level": 1,
+      "score": 41.7
+    },
+    {
+      "id": "https://openalex.org/C111368507",
+      "wikidata": "https://www.wikidata.org/wiki/Q43518",
+      "display_name": "Oceanography",
+      "level": 1,
+      "score": 41.7
+    },
+    {
+      "id": "https://openalex.org/C147176958",
+      "wikidata": "https://www.wikidata.org/wiki/Q77590",
+      "display_name": "Civil engineering",
+      "level": 1,
+      "score": 41.7
+    },
+    {
+      "id": "https://openalex.org/C187320778",
+      "wikidata": "https://www.wikidata.org/wiki/Q1349130",
+      "display_name": "Geotechnical engineering",
+      "level": 1,
+      "score": 41.7
+    },
+    {
+      "id": "https://openalex.org/C119599485",
+      "wikidata": "https://www.wikidata.org/wiki/Q43035",
+      "display_name": "Electrical engineering",
+      "level": 1,
+      "score": 33.3
+    },
+    {
+      "id": "https://openalex.org/C150560799",
+      "wikidata": "https://www.wikidata.org/wiki/Q502102",
+      "display_name": "Borehole",
+      "level": 2,
+      "score": 33.3
+    },
+    {
+      "id": "https://openalex.org/C151730666",
+      "wikidata": "https://www.wikidata.org/wiki/Q7205",
+      "display_name": "Paleontology",
+      "level": 1,
+      "score": 33.3
+    },
+    {
+      "id": "https://openalex.org/C188573790",
+      "wikidata": "https://www.wikidata.org/wiki/Q12705",
+      "display_name": "Renewable energy",
+      "level": 2,
+      "score": 33.3
+    },
+    {
+      "id": "https://openalex.org/C204530211",
+      "wikidata": "https://www.wikidata.org/wiki/Q752823",
+      "display_name": "Thermal",
+      "level": 2,
+      "score": 33.3
+    },
+    {
+      "id": "https://openalex.org/C2781439067",
+      "wikidata": "https://www.wikidata.org/wiki/Q5986479",
+      "display_name": "Icing",
+      "level": 2,
+      "score": 33.3
+    },
+    {
+      "id": "https://openalex.org/C22212356",
+      "wikidata": "https://www.wikidata.org/wiki/Q775325",
+      "display_name": "Transport engineering",
+      "level": 1,
+      "score": 25
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 25
+    },
+    {
+      "id": "https://openalex.org/C78519656",
+      "wikidata": "https://www.wikidata.org/wiki/Q101333",
+      "display_name": "Mechanical engineering",
+      "level": 1,
+      "score": 25
+    },
+    {
+      "id": "https://openalex.org/C146978453",
+      "wikidata": "https://www.wikidata.org/wiki/Q3798668",
+      "display_name": "Aerospace engineering",
+      "level": 1,
+      "score": 25
+    },
+    {
+      "id": "https://openalex.org/C159985019",
+      "wikidata": "https://www.wikidata.org/wiki/Q181790",
+      "display_name": "Composite material",
+      "level": 1,
+      "score": 25
+    },
+    {
+      "id": "https://openalex.org/C192562407",
+      "wikidata": "https://www.wikidata.org/wiki/Q228736",
+      "display_name": "Materials science",
+      "level": 0,
+      "score": 25
+    }
+  ],
+  "works_api_url": "https://api.openalex.org/works?filter=author.id:A2104057386",
+  "updated_date": "2023-03-23T02:27:55.290826",
+  "created_date": "2016-06-24"
+}
+{
+  "id": "https://openalex.org/A2571260744",
+  "orcid": null,
+  "display_name": "Ruimin Lu",
+  "display_name_alternatives": [],
+  "works_count": 28,
+  "cited_by_count": 125,
+  "most_cited_work": "A fluorescent sensor for Al 3+ based on a photochromic diarylethene with a hydrazinobenzothiazole Schiff base unit (2017)",
+  "summary_stats": {
+    "2yr_mean_citedness": 1.2,
+    "h_index": 7,
+    "i10_index": 7
+  },
+  "ids": {
+    "openalex": "https://openalex.org/A2571260744",
+    "mag": 2571260744
+  },
+  "last_known_institution": {
+    "id": "https://openalex.org/I41317344",
+    "ror": "https://ror.org/04r1zkp10",
+    "display_name": "Jiangxi Science and Technology Normal University",
+    "country_code": "CN",
+    "type": "education"
+  },
+  "counts_by_year": [
+    {
+      "year": 2023,
+      "works_count": 0,
+      "cited_by_count": 7
+    },
+    {
+      "year": 2022,
+      "works_count": 1,
+      "cited_by_count": 17
+    },
+    {
+      "year": 2021,
+      "works_count": 4,
+      "cited_by_count": 28
+    },
+    {
+      "year": 2020,
+      "works_count": 1,
+      "cited_by_count": 22
+    },
+    {
+      "year": 2019,
+      "works_count": 2,
+      "cited_by_count": 29
+    },
+    {
+      "year": 2018,
+      "works_count": 1,
+      "cited_by_count": 19
+    },
+    {
+      "year": 2017,
+      "works_count": 5,
+      "cited_by_count": 6
+    },
+    {
+      "year": 2016,
+      "works_count": 3,
+      "cited_by_count": 4
+    },
+    {
+      "year": 2015,
+      "works_count": 3,
+      "cited_by_count": 2
+    },
+    {
+      "year": 2014,
+      "works_count": 2,
+      "cited_by_count": 0
+    },
+    {
+      "year": 2013,
+      "works_count": 1,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2012,
+      "works_count": 1,
+      "cited_by_count": 2
+    }
+  ],
+  "x_concepts": [
+    {
+      "id": "https://openalex.org/C121332964",
+      "wikidata": "https://www.wikidata.org/wiki/Q413",
+      "display_name": "Physics",
+      "level": 0,
+      "score": 350
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 283.3
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 216.7
+    },
+    {
+      "id": "https://openalex.org/C31258907",
+      "wikidata": "https://www.wikidata.org/wiki/Q1301371",
+      "display_name": "Computer network",
+      "level": 1,
+      "score": 200
+    },
+    {
+      "id": "https://openalex.org/C62520636",
+      "wikidata": "https://www.wikidata.org/wiki/Q944",
+      "display_name": "Quantum mechanics",
+      "level": 1,
+      "score": 200
+    },
+    {
+      "id": "https://openalex.org/C76155785",
+      "wikidata": "https://www.wikidata.org/wiki/Q418",
+      "display_name": "Telecommunications",
+      "level": 1,
+      "score": 183.3
+    },
+    {
+      "id": "https://openalex.org/C33923547",
+      "wikidata": "https://www.wikidata.org/wiki/Q395",
+      "display_name": "Mathematics",
+      "level": 0,
+      "score": 166.7
+    },
+    {
+      "id": "https://openalex.org/C86803240",
+      "wikidata": "https://www.wikidata.org/wiki/Q420",
+      "display_name": "Biology",
+      "level": 0,
+      "score": 166.7
+    },
+    {
+      "id": "https://openalex.org/C111919701",
+      "wikidata": "https://www.wikidata.org/wiki/Q9135",
+      "display_name": "Operating system",
+      "level": 1,
+      "score": 166.7
+    },
+    {
+      "id": "https://openalex.org/C71924100",
+      "wikidata": "https://www.wikidata.org/wiki/Q11190",
+      "display_name": "Medicine",
+      "level": 0,
+      "score": 150
+    },
+    {
+      "id": "https://openalex.org/C119599485",
+      "wikidata": "https://www.wikidata.org/wiki/Q43035",
+      "display_name": "Electrical engineering",
+      "level": 1,
+      "score": 150
+    },
+    {
+      "id": "https://openalex.org/C185592680",
+      "wikidata": "https://www.wikidata.org/wiki/Q2329",
+      "display_name": "Chemistry",
+      "level": 0,
+      "score": 150
+    },
+    {
+      "id": "https://openalex.org/C127162648",
+      "wikidata": "https://www.wikidata.org/wiki/Q16858953",
+      "display_name": "Channel (broadcasting)",
+      "level": 2,
+      "score": 133.3
+    },
+    {
+      "id": "https://openalex.org/C178790620",
+      "wikidata": "https://www.wikidata.org/wiki/Q11351",
+      "display_name": "Organic chemistry",
+      "level": 1,
+      "score": 133.3
+    },
+    {
+      "id": "https://openalex.org/C192562407",
+      "wikidata": "https://www.wikidata.org/wiki/Q228736",
+      "display_name": "Materials science",
+      "level": 0,
+      "score": 133.3
+    },
+    {
+      "id": "https://openalex.org/C24326235",
+      "wikidata": "https://www.wikidata.org/wiki/Q126095",
+      "display_name": "Electronic engineering",
+      "level": 1,
+      "score": 116.7
+    },
+    {
+      "id": "https://openalex.org/C120665830",
+      "wikidata": "https://www.wikidata.org/wiki/Q14620",
+      "display_name": "Optics",
+      "level": 1,
+      "score": 116.7
+    },
+    {
+      "id": "https://openalex.org/C146978453",
+      "wikidata": "https://www.wikidata.org/wiki/Q3798668",
+      "display_name": "Aerospace engineering",
+      "level": 1,
+      "score": 116.7
+    },
+    {
+      "id": "https://openalex.org/C154945302",
+      "wikidata": "https://www.wikidata.org/wiki/Q11660",
+      "display_name": "Artificial intelligence",
+      "level": 1,
+      "score": 116.7
+    },
+    {
+      "id": "https://openalex.org/C1276947",
+      "wikidata": "https://www.wikidata.org/wiki/Q333",
+      "display_name": "Astronomy",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C11413529",
+      "wikidata": "https://www.wikidata.org/wiki/Q8366",
+      "display_name": "Algorithm",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C19269812",
+      "wikidata": "https://www.wikidata.org/wiki/Q26540",
+      "display_name": "Satellite",
+      "level": 2,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C38652104",
+      "wikidata": "https://www.wikidata.org/wiki/Q3510521",
+      "display_name": "Computer security",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C121308736",
+      "wikidata": "https://www.wikidata.org/wiki/Q149918",
+      "display_name": "Communications satellite",
+      "level": 3,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C142724271",
+      "wikidata": "https://www.wikidata.org/wiki/Q7208",
+      "display_name": "Pathology",
+      "level": 1,
+      "score": 100
+    }
+  ],
+  "works_api_url": "https://api.openalex.org/works?filter=author.id:A2571260744",
+  "updated_date": "2023-03-23T02:27:55.902270",
+  "created_date": "2017-01-13"
+}
+{
+  "id": "https://openalex.org/A3197776079",
+  "orcid": null,
+  "display_name": "Ries Mh",
+  "display_name_alternatives": [],
+  "works_count": 1,
+  "cited_by_count": 130,
+  "most_cited_work": "Critical Care Telemedicine (2014)",
+  "summary_stats": {
+    "2yr_mean_citedness": null,
+    "h_index": 1,
+    "i10_index": 1
+  },
+  "ids": {
+    "openalex": "https://openalex.org/A3197776079",
+    "mag": 3197776079
+  },
+  "last_known_institution": {
+    "id": "https://openalex.org/I166722992",
+    "ror": "https://ror.org/0464eyp60",
+    "display_name": "University of Massachusetts Medical School",
+    "country_code": "US",
+    "type": "education"
+  },
+  "counts_by_year": [
+    {
+      "year": 2023,
+      "works_count": 0,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2022,
+      "works_count": 0,
+      "cited_by_count": 12
+    },
+    {
+      "year": 2021,
+      "works_count": 0,
+      "cited_by_count": 17
+    },
+    {
+      "year": 2020,
+      "works_count": 0,
+      "cited_by_count": 16
+    },
+    {
+      "year": 2019,
+      "works_count": 0,
+      "cited_by_count": 22
+    },
+    {
+      "year": 2018,
+      "works_count": 0,
+      "cited_by_count": 10
+    },
+    {
+      "year": 2017,
+      "works_count": 0,
+      "cited_by_count": 19
+    },
+    {
+      "year": 2016,
+      "works_count": 0,
+      "cited_by_count": 19
+    },
+    {
+      "year": 2015,
+      "works_count": 0,
+      "cited_by_count": 12
+    },
+    {
+      "year": 2014,
+      "works_count": 1,
+      "cited_by_count": 2
+    }
+  ],
+  "x_concepts": [
+    {
+      "id": "https://openalex.org/C17744445",
+      "wikidata": "https://www.wikidata.org/wiki/Q36442",
+      "display_name": "Political science",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C50522688",
+      "wikidata": "https://www.wikidata.org/wiki/Q189833",
+      "display_name": "Economic growth",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C55493867",
+      "wikidata": "https://www.wikidata.org/wiki/Q7094",
+      "display_name": "Biochemistry",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C71924100",
+      "wikidata": "https://www.wikidata.org/wiki/Q11190",
+      "display_name": "Medicine",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C86803240",
+      "wikidata": "https://www.wikidata.org/wiki/Q420",
+      "display_name": "Biology",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C160735492",
+      "wikidata": "https://www.wikidata.org/wiki/Q31207",
+      "display_name": "Health care",
+      "level": 2,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C162324750",
+      "wikidata": "https://www.wikidata.org/wiki/Q8134",
+      "display_name": "Economics",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C185592680",
+      "wikidata": "https://www.wikidata.org/wiki/Q2329",
+      "display_name": "Chemistry",
+      "level": 0,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C194828623",
+      "wikidata": "https://www.wikidata.org/wiki/Q2861470",
+      "display_name": "Emergency medicine",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C199539241",
+      "wikidata": "https://www.wikidata.org/wiki/Q7748",
+      "display_name": "Law",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C545542383",
+      "wikidata": "https://www.wikidata.org/wiki/Q2751242",
+      "display_name": "Medical emergency",
+      "level": 1,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C2779473830",
+      "wikidata": "https://www.wikidata.org/wiki/Q1540899",
+      "display_name": "MEDLINE",
+      "level": 2,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C2779703844",
+      "wikidata": "https://www.wikidata.org/wiki/Q760125",
+      "display_name": "Reimbursement",
+      "level": 3,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C2779891985",
+      "wikidata": "https://www.wikidata.org/wiki/Q46994",
+      "display_name": "Telemedicine",
+      "level": 3,
+      "score": 100
+    }
+  ],
+  "works_api_url": "https://api.openalex.org/works?filter=author.id:A3197776079",
+  "updated_date": "2023-03-23T02:27:56.820653",
+  "created_date": "2021-09-13"
+}
+{
+  "id": "https://openalex.org/A1931502965",
+  "orcid": null,
+  "display_name": "Kirsten Lundgreen",
+  "display_name_alternatives": [],
+  "works_count": 21,
+  "cited_by_count": 350,
+  "most_cited_work": "Sports and exercise-related tendinopathies: a review of selected topical issues by participants of the second International Scientific Tendinopathy Symposium (ISTS) ... (2013)",
+  "summary_stats": {
+    "2yr_mean_citedness": null,
+    "h_index": 9,
+    "i10_index": 8
+  },
+  "ids": {
+    "openalex": "https://openalex.org/A1931502965",
+    "mag": 1931502965
+  },
+  "last_known_institution": {
+    "id": "https://openalex.org/I4210103290",
+    "ror": "https://ror.org/015rzvz05",
+    "display_name": "Lovisenberg Diakonale Høgskole",
+    "country_code": "NO",
+    "type": "education"
+  },
+  "counts_by_year": [
+    {
+      "year": 2023,
+      "works_count": 0,
+      "cited_by_count": 9
+    },
+    {
+      "year": 2022,
+      "works_count": 0,
+      "cited_by_count": 42
+    },
+    {
+      "year": 2021,
+      "works_count": 3,
+      "cited_by_count": 55
+    },
+    {
+      "year": 2020,
+      "works_count": 0,
+      "cited_by_count": 48
+    },
+    {
+      "year": 2019,
+      "works_count": 1,
+      "cited_by_count": 36
+    },
+    {
+      "year": 2018,
+      "works_count": 4,
+      "cited_by_count": 38
+    },
+    {
+      "year": 2017,
+      "works_count": 1,
+      "cited_by_count": 38
+    },
+    {
+      "year": 2016,
+      "works_count": 2,
+      "cited_by_count": 28
+    },
+    {
+      "year": 2015,
+      "works_count": 0,
+      "cited_by_count": 41
+    },
+    {
+      "year": 2014,
+      "works_count": 4,
+      "cited_by_count": 22
+    },
+    {
+      "year": 2013,
+      "works_count": 4,
+      "cited_by_count": 6
+    },
+    {
+      "year": 2012,
+      "works_count": 1,
+      "cited_by_count": 6
+    }
+  ],
+  "x_concepts": [
+    {
+      "id": "https://openalex.org/C71924100",
+      "wikidata": "https://www.wikidata.org/wiki/Q11190",
+      "display_name": "Medicine",
+      "level": 0,
+      "score": 138.5
+    },
+    {
+      "id": "https://openalex.org/C86803240",
+      "wikidata": "https://www.wikidata.org/wiki/Q420",
+      "display_name": "Biology",
+      "level": 0,
+      "score": 130.8
+    },
+    {
+      "id": "https://openalex.org/C141071460",
+      "wikidata": "https://www.wikidata.org/wiki/Q40821",
+      "display_name": "Surgery",
+      "level": 1,
+      "score": 123.1
+    },
+    {
+      "id": "https://openalex.org/C142724271",
+      "wikidata": "https://www.wikidata.org/wiki/Q7208",
+      "display_name": "Pathology",
+      "level": 1,
+      "score": 123.1
+    },
+    {
+      "id": "https://openalex.org/C105702510",
+      "wikidata": "https://www.wikidata.org/wiki/Q514",
+      "display_name": "Anatomy",
+      "level": 1,
+      "score": 115.4
+    },
+    {
+      "id": "https://openalex.org/C126838900",
+      "wikidata": "https://www.wikidata.org/wiki/Q77604",
+      "display_name": "Radiology",
+      "level": 1,
+      "score": 107.7
+    },
+    {
+      "id": "https://openalex.org/C2776511800",
+      "wikidata": "https://www.wikidata.org/wiki/Q1764136",
+      "display_name": "Rotator cuff",
+      "level": 2,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C2780105995",
+      "wikidata": "https://www.wikidata.org/wiki/Q232358",
+      "display_name": "Tendon",
+      "level": 2,
+      "score": 100
+    },
+    {
+      "id": "https://openalex.org/C126322002",
+      "wikidata": "https://www.wikidata.org/wiki/Q11180",
+      "display_name": "Internal medicine",
+      "level": 1,
+      "score": 84.6
+    },
+    {
+      "id": "https://openalex.org/C203014093",
+      "wikidata": "https://www.wikidata.org/wiki/Q101929",
+      "display_name": "Immunology",
+      "level": 1,
+      "score": 84.6
+    },
+    {
+      "id": "https://openalex.org/C199343813",
+      "wikidata": "https://www.wikidata.org/wiki/Q12128",
+      "display_name": "Dentistry",
+      "level": 1,
+      "score": 76.9
+    },
+    {
+      "id": "https://openalex.org/C2778275304",
+      "wikidata": "https://www.wikidata.org/wiki/Q76469",
+      "display_name": "Tears",
+      "level": 2,
+      "score": 76.9
+    },
+    {
+      "id": "https://openalex.org/C54355233",
+      "wikidata": "https://www.wikidata.org/wiki/Q7162",
+      "display_name": "Genetics",
+      "level": 1,
+      "score": 69.2
+    },
+    {
+      "id": "https://openalex.org/C55493867",
+      "wikidata": "https://www.wikidata.org/wiki/Q7094",
+      "display_name": "Biochemistry",
+      "level": 1,
+      "score": 61.5
+    },
+    {
+      "id": "https://openalex.org/C185592680",
+      "wikidata": "https://www.wikidata.org/wiki/Q2329",
+      "display_name": "Chemistry",
+      "level": 0,
+      "score": 61.5
+    },
+    {
+      "id": "https://openalex.org/C2778911562",
+      "wikidata": "https://www.wikidata.org/wiki/Q1682583",
+      "display_name": "Tendinopathy",
+      "level": 3,
+      "score": 61.5
+    },
+    {
+      "id": "https://openalex.org/C15744967",
+      "wikidata": "https://www.wikidata.org/wiki/Q9418",
+      "display_name": "Psychology",
+      "level": 0,
+      "score": 46.2
+    },
+    {
+      "id": "https://openalex.org/C118552586",
+      "wikidata": "https://www.wikidata.org/wiki/Q7867",
+      "display_name": "Psychiatry",
+      "level": 1,
+      "score": 46.2
+    },
+    {
+      "id": "https://openalex.org/C127313418",
+      "wikidata": "https://www.wikidata.org/wiki/Q1069",
+      "display_name": "Geology",
+      "level": 0,
+      "score": 46.2
+    },
+    {
+      "id": "https://openalex.org/C151730666",
+      "wikidata": "https://www.wikidata.org/wiki/Q7205",
+      "display_name": "Paleontology",
+      "level": 1,
+      "score": 46.2
+    },
+    {
+      "id": "https://openalex.org/C2779162959",
+      "wikidata": "https://www.wikidata.org/wiki/Q708232",
+      "display_name": "Arthroscopy",
+      "level": 2,
+      "score": 46.2
+    },
+    {
+      "id": "https://openalex.org/C33923547",
+      "wikidata": "https://www.wikidata.org/wiki/Q395",
+      "display_name": "Mathematics",
+      "level": 0,
+      "score": 38.5
+    },
+    {
+      "id": "https://openalex.org/C68312169",
+      "wikidata": "https://www.wikidata.org/wiki/Q216685",
+      "display_name": "Orthopedic surgery",
+      "level": 2,
+      "score": 38.5
+    },
+    {
+      "id": "https://openalex.org/C188816634",
+      "wikidata": "https://www.wikidata.org/wiki/Q2113324",
+      "display_name": "Prospective cohort study",
+      "level": 2,
+      "score": 38.5
+    },
+    {
+      "id": "https://openalex.org/C190283241",
+      "wikidata": "https://www.wikidata.org/wiki/Q14599311",
+      "display_name": "Apoptosis",
+      "level": 2,
+      "score": 38.5
+    }
+  ],
+  "works_api_url": "https://api.openalex.org/works?filter=author.id:A1931502965",
+  "updated_date": "2023-03-23T02:27:55.244847",
+  "created_date": "2016-06-24"
+}
