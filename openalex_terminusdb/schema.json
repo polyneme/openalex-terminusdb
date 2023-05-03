@@ -12,7 +12,7 @@
       "@fields": ["id"]
     },
     "id": "xsd:anyURI",
-    "wikidata": {"@type": "Optional", "@type": "xsd:anyURI"},
+    "wikidata": {"@type": "Optional", "@class": "xsd:anyURI"},
     "display_name": "xsd:string",
     "level": "xsd:unsignedByte",
     "score": "xsd:float"
@@ -35,10 +35,10 @@
       "@fields": ["id"]
     },
     "id": "xsd:anyURI",
-    "ror": "xsd:anyURI",
-    "display_name": "xsd:string",
-    "country_code": "xsd:string",
-    "type": "xsd:string"
+    "ror": {"@type": "Optional", "@class": "xsd:anyURI"},
+    "display_name": {"@type": "Optional", "@class": "xsd:string"},
+    "country_code": {"@type": "Optional", "@class": "xsd:string"},
+    "type": {"@type": "Optional", "@class": "xsd:string"}
   },
   {
     "@id": "ExternalIDs",
@@ -98,12 +98,12 @@
     "cited_by_count": "xsd:nonNegativeInteger",
     "counts_by_year": {"@type":  "Set", "@class": "CitedByCountByYear"},
     "created_date": "xsd:date",
-    "display_name": "xsd:string",
+    "display_name": {"@type": "Optional", "@class": "xsd:string"},
     "display_name_alternatives": {"@type": "Set", "@class": "xsd:string"},
     "id": "xsd:anyURI",
     "ids": "ExternalIDs",
     "orcid": {"@type":  "Optional","@class": "xsd:anyURI"},
-    "last_known_institution": "AuthorLastKnownInstitution",
+    "last_known_institution": {"@type":  "Optional","@class": "AuthorLastKnownInstitution"},
     "summary_stats": "AuthorSummaryStats",
     "updated_date": "xsd:dateTime",
     "works_api_url": "xsd:anyURI",
