@@ -1082,15 +1082,7 @@
     {
       "id": "https://openalex.org/C2778461978",
       "wikidata": "https://www.wikidata.org/wiki/Q29496",
-      "display_name": "Leukemia",
-      "level": 2,
-      "score": 25
-    }
-  ],
-  "works_api_url": "https://api.openalex.org/works?filter=author.id:A2043233140",
-  "updated_date": "2023-03-23T02:27:55.220289",
-  "created_date": "2016-06-24"
-}
+
 {
   "id": "https://openalex.org/A4227693517",
   "orcid": null,
