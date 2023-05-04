@@ -20,4 +20,4 @@ update: update-deps init
 redeploy:
 	cd ~ && docker compose up -d --build --force-recreate dagster_codelocation_openalex_terminusdb
 
-.PHONY: init update-deps update all
+.PHONY: init update-deps update redeploy
