@@ -20,7 +20,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Add repository code
 COPY . .
-RUN pip install --no-cache-dir --editable .
+RUN pip install --no-cache-dir .
 
 # Run dagster gRPC server on port 4000
 

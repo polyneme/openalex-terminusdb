@@ -1,4 +1,7 @@
+boto3
 dagster
 dagster-postgres
 dagster-docker
 pandas
+pymongo
+terminusdb-client
