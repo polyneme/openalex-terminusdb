@@ -1,4 +1,4 @@
-from dagster import asset, OpExecutionContext
+from dagster import asset, OpExecutionContext, load_assets_from_current_module
 
 from openalex_terminusdb.resources import S3Resource, MongoResource, TerminusResource
 
@@ -18,3 +18,6 @@ def connections_okay(
 
     tdb = terminus.get_client()
     context.log.info(tdb.get_database("openalex_snapshot"))
+
+
+etl_assets = load_assets_from_current_module(group_name="etl")
