@@ -27,16 +27,12 @@ class MongoResource(ConfigurableResource):
     host: str
     username: str
     password: str
-    authSource: str = "admin"
-    tls: bool = True
 
     def get_client(self):
         return MongoClient(
             host=self.host,
             username=self.username,
             password=self.password,
-            authSource=self.authSource,
-            tls=self.tls,
         )
 
 

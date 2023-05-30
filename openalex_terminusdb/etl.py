@@ -13,8 +13,8 @@ def connections_okay(
     s3client = s3.get_client()
     context.log.info(s3client.list_buckets())
 
-    # mdb = mongo.get_client()
-    # context.log.info(mdb.list_collection_names())
+    mdb = mongo.get_client().get_database("openalex")
+    context.log.info(mdb.list_collection_names())
 
     tdb = terminus.get_client()
     context.log.info(tdb.get_database("openalex_snapshot"))
