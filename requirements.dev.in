@@ -2,6 +2,7 @@
 black
 coverage
 flake8
+ipython
 pip-tools
 pip
 pytest
