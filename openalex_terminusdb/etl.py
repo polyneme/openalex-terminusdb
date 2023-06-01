@@ -11,7 +11,7 @@ from dagster import (
     Failure,
     Output,
 )
-from terminusdb_client import GraphType
+from terminusdb_client import GraphType, WOQLClient, WOQLQuery as WQ
 from toolz import get_in, keyfilter, assoc
 
 from openalex_terminusdb.config import (
@@ -127,10 +127,20 @@ def pick(allowlist, d):
     return keyfilter(lambda k: k in allowlist, d)
 
 
+def iri_from_class_and_id(tdb: WOQLClient, id_: str, cls: str):
+    result = tdb.query(
+        WQ()
+        .triple("v:Id", "rdf:type", f"@schema:{cls}")
+        .triple("v:Id", "@schema:id", WQ().string(id_))
+    )
+    return result["bindings"][0]["Id"]
+
+
 @asset
 def ingest_source_and_friends_by_id(
     context: OpExecutionContext,
     config: SourceIdConfig,
+    s3: S3Resource,
     mongo: MongoResource,
     terminus: TerminusResource,
 ):
@@ -180,16 +190,20 @@ def ingest_source_and_friends_by_id(
         {"locations.source.id": config.source_id}, projection["Work"]
     ):
         context.log.info(f"Processing Work {work_doc['id']} authorships...")
-        for authorship_subdoc in work_doc["authorships"]:
-
+        for i, authorship_subdoc in enumerate(work_doc["authorships"]):
             context.log.info(
                 f"Processing Work {work_doc['id']} authorship institutions..."
             )
-            for institution_subdoc in authorship_subdoc["institutions"]:
+            for j, institution_subdoc in enumerate(authorship_subdoc["institutions"]):
                 institution_doc = mdb.institutions.find_one(
                     {"id": institution_subdoc["id"]}, projection["Institution"]
                 ) | {"@type": "Institution"}
                 tdb.update_document(institution_doc)
+                institution_iri = iri_from_class_and_id(
+                    tdb, institution_doc["id"], "Institution"
+                )
+                context.log.info(institution_iri)
+                work_doc["authorships"][i]["institutions"][j] = institution_iri
 
             context.log.info(f"Processing Work {work_doc['id']} authorship author...")
             author_doc = mdb.authors.find_one(
@@ -202,9 +216,12 @@ def ingest_source_and_friends_by_id(
                     "Institution",
                 )
             tdb.update_document(author_doc)
+            author_iri = iri_from_class_and_id(tdb, author_doc["id"], "Author")
+            context.log.info(author_iri)
+            work_doc["authorships"][i]["author"] = author_iri
 
         context.log.info(f"Processing Work {work_doc['id']} concepts...")
-        for concept_subdoc in work_doc["concepts"]:
+        for i, concept_subdoc in enumerate(work_doc["concepts"]):
             concept_doc = mdb.concepts.find_one(
                 {"id": concept_subdoc["id"]}, projection["Concept"]
             ) | {"@type": "Concept"}
@@ -216,17 +233,33 @@ def ingest_source_and_friends_by_id(
                     concept_doc, "related_concepts", "ScoredConcept", multi=True
                 )
             tdb.update_document(concept_doc)
+            concept_iri = iri_from_class_and_id(tdb, concept_doc["id"], "Concept")
+            context.log.info(concept_iri)
+            work_doc["concepts"][i] = concept_iri
 
         context.log.info(f"Processing Work {work_doc['id']} locations...")
-        for location_subdoc in work_doc["locations"]:
+        for i, location_subdoc in enumerate(work_doc["locations"]):
             if location_source_subdoc := location_subdoc.get("source"):
+                context.log.info(f'OpenAlex URL: {location_source_subdoc["id"]}')
                 source_doc = mdb.sources.find_one(
                     {"id": location_source_subdoc["id"]}, projection["Source"]
                 ) | {"@type": "Source"}
                 tdb.update_document(source_doc)
+                source_iri = iri_from_class_and_id(tdb, source_doc["id"], "Source")
+                context.log.info(source_iri)
+                work_doc["locations"][i]["source"] = source_iri
 
         context.log.info(f"Processing Work {work_doc['id']} itself for insertion...")
+
         work_doc |= {"@type": "Work"}
+        if work_doc.get("primary_location", {}).get("source"):
+            work_doc["primary_location"]["source"] = iri_from_class_and_id(
+                tdb, work_doc["primary_location"]["source"]["id"], "Source"
+            )
+        if work_doc.get("best_oa_location", {}).get("source"):
+            work_doc["best_oa_location"]["source"] = iri_from_class_and_id(
+                tdb, work_doc["best_oa_location"]["source"]["id"], "Source"
+            )
 
         for (field, cls, multi) in [
             ("ids", "Identifiers", False),
@@ -243,9 +276,6 @@ def ingest_source_and_friends_by_id(
             loc = pick(framed_keys["Location"], loc)
             if isinstance(loc, dict):
                 loc["@type"] = "Location"
-                if "source" in loc and isinstance(loc["source"], dict):
-                    loc["source"] = pick(framed_keys["Source"], loc["source"])
-                    loc["source"]["@type"] = "Source"
             return loc
 
         for i, loc in enumerate(work_doc["locations"]):
@@ -258,8 +288,32 @@ def ingest_source_and_friends_by_id(
             work_doc["best_oa_location"] = ensure_loc_type_hints(
                 work_doc["best_oa_location"]
             )
-        context.log.info(work_doc["ids"])
-        context.log.info("foo")
+
+        for works_array_field in ["related_works", "referenced_works"]:
+            context.log.info(f"Upserting Work {work_doc['id']} {works_array_field}...")
+            if work_doc.get(works_array_field):
+                tdb.update_document(
+                    [
+                        {"id": work_id, "@type": "Work"}
+                        for work_id in work_doc[works_array_field]
+                    ]
+                )
+                work_doc[works_array_field] = [
+                    d["Work"]
+                    for d in tdb.query(
+                        WQ().woql_or(
+                            *[
+                                WQ().triple(
+                                    "v:Work", "@schema:id", WQ().string(work_id)  # noqa
+                                )
+                                for work_id in work_doc[works_array_field]
+                            ]
+                        )
+                    )["bindings"]
+                ]
+
+        context.log.info(f"Upserting Work {work_doc['id']}...")
+        context.log.info(work_doc)
         tdb.update_document(work_doc)
 
 
