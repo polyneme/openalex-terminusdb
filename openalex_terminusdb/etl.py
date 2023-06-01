@@ -241,6 +241,9 @@ def ingest_source_and_friends_by_id(
         for i, location_subdoc in enumerate(work_doc["locations"]):
             if location_source_subdoc := location_subdoc.get("source"):
                 context.log.info(f'OpenAlex URL: {location_source_subdoc["id"]}')
+                # TODO dear god, id:"https://openalex.org/S4306400194" isn't in Mongo.
+                #   But it's online at <https://api.openalex.org/sources/S4306400194>.
+                #   WTF.
                 source_doc = mdb.sources.find_one(
                     {"id": location_source_subdoc["id"]}, projection["Source"]
                 ) | {"@type": "Source"}
