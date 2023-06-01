@@ -85,7 +85,7 @@
     "@type": "Class",
     "@subdocument": [],
     "@key": { "@type": "Random"},
-    "source": "Source",
+    "source": {"@type": "Optional", "@class": "Source"},
     "is_oa": {"@type": "Optional", "@class": "xsd:boolean"},
     "landing_page_url": {"@type": "Optional", "@class": "xsd:string"},
     "license": {"@type": "Optional", "@class": "xsd:string"},
