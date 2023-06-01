@@ -1,7 +1,7 @@
 import gzip
 import json
 from io import BytesIO
-from typing import List
+from typing import List, Literal
 
 import boto3
 import botocore
@@ -12,6 +12,7 @@ from dagster import (
     InputContext,
     MetadataValue,
 )
+from mypy_boto3_s3 import S3Client
 from pymongo import MongoClient
 from terminusdb_client import Client as TerminusClient
 
@@ -60,6 +61,70 @@ class S3Resource(ConfigurableResource):
             aws_secret_access_key=self.aws_secret_access_key,
         )
 
+    def list_object_keys(self, bucket: str, prefix: str) -> list[str]:
+        client: S3Client = self.get_client()
+        is_truncated = True
+        object_keys = []
+        continuation_token = None
+        while is_truncated:
+            kwargs = {"Bucket": bucket, "Prefix": prefix}
+            if continuation_token:
+                kwargs["ContinuationToken"] = continuation_token
+            response = client.list_objects_v2(**kwargs)
+            for obj in response["Contents"]:
+                object_keys.append(obj["Key"])
+            is_truncated = response["IsTruncated"]
+            continuation_token = (
+                response["NextContinuationToken"] if is_truncated else None
+            )
+        return object_keys
+
+    def load_gzipped_ndjson_object(self, bucket: str, key: str):
+        client: S3Client = self.get_client()
+        response = client.get_object(
+            Bucket=bucket,
+            Key=key,
+        )
+        content = response["Body"].read()
+        return [
+            json.loads(line)
+            for line in gzip.decompress(content).decode("utf-8").strip().split("\n")
+        ]
+
+    def put_gzipped_ndjson_object(
+        self,
+        bucket: str,
+        key: str,
+        obj: list[dict],
+        acl: Literal["private", "public-read"] = "private",
+    ):
+        client: S3Client = self.get_client()
+        _f = BytesIO()
+        n_lines = len(obj)
+        with gzip.open(_f, "wb") as f:
+            for i, line in enumerate(obj, start=1):
+                f.write(
+                    (json.dumps(line) + ("\n" if i < n_lines else "")).encode("utf-8")
+                )
+        client.put_object(
+            Bucket=bucket,
+            Key=key,
+            Body=_f.getvalue(),
+            ACL=acl,
+        )
+
+    def generate_presigned_url(self, bucket: str, key: str, expires_in_days: int = 7):
+        client: S3Client = self.get_client()
+        url = client.generate_presigned_url(
+            ClientMethod="get_object",
+            Params={
+                "Bucket": bucket,
+                "Key": key,
+            },
+            ExpiresIn=expires_in_days * 24 * 60 * 60,
+        )
+        return "/".join([f"https://{get_s3_cdn_hostname()}"] + url.split("/")[3:])
+
 
 class ConfigurableGzippedNdJsonS3IOManager(ConfigurableIOManager):
     """Store and load gzipped newline-delimited JSON files (*.ndjson.gz) from S3."""
@@ -73,27 +138,15 @@ class ConfigurableGzippedNdJsonS3IOManager(ConfigurableIOManager):
 
     def handle_output(self, context: OutputContext, obj: list[dict]):
         _f = BytesIO()
-        s3client = self.s3_resource.get_client()
-        with gzip.open(_f, "wb") as f:
-            for line in obj:
-                f.write((json.dumps(line) + "\n").encode("utf-8"))
-        s3client.put_object(
-            Bucket=self.s3_bucket,
-            Key=self._get_key(context),
-            Body=_f.getvalue(),
-            ACL="private",
+        self.s3_resource.put_gzipped_ndjson_object(
+            bucket=self.s3_bucket, key=self._get_key(context), obj=obj
         )
         url_expires_in_days = 7
-        url = s3client.generate_presigned_url(
-            ClientMethod="get_object",
-            Params={
-                "Bucket": self.s3_bucket,
-                "Key": self._get_key(context),
-            },
-            ExpiresIn=url_expires_in_days * 24 * 60 * 60,
+        url = self.s3_resource.generate_presigned_url(
+            bucket=self.s3_bucket,
+            key=self._get_key(context),
+            expires_in_days=url_expires_in_days,
         )
-        url = "/".join([f"https://{get_s3_cdn_hostname()}"] + url.split("/")[3:])
-
         context.add_output_metadata(
             {
                 "s3_path": f"s3://{self.s3_bucket}/{self._get_key(context)}",
@@ -103,12 +156,6 @@ class ConfigurableGzippedNdJsonS3IOManager(ConfigurableIOManager):
         )
 
     def load_input(self, context: InputContext):
-        response = self.s3_resource.get_client().get_object(
-            Bucket=self.s3_bucket,
-            Key=self._get_key(context),
+        return self.s3_resource.load_gzipped_ndjson_object(
+            bucket=self.s3_bucket, key=self._get_key(context)
         )
-        content = response["Body"].read()
-        return [
-            json.loads(line)
-            for line in gzip.decompress(content).decode("utf-8").strip().split("\n")
-        ]

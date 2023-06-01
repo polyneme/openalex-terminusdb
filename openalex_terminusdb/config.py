@@ -1,5 +1,8 @@
 from functools import lru_cache
 import os
+from typing import TypedDict
+
+from pydantic import BaseModel
 
 
 @lru_cache
@@ -34,3 +37,16 @@ def get_s3_config():
 @lru_cache
 def get_s3_cdn_hostname():
     return os.getenv("S3_CDN_HOSTNAME")
+
+
+class OpenalexSnapshotS3Config(BaseModel):
+    bucket: str
+    prefix: str
+
+
+@lru_cache
+def get_openalex_snapshot_s3_config():
+    return OpenalexSnapshotS3Config(
+        bucket=os.getenv("OPENALEX_SNAPSHOT_S3_BUCKET"),
+        prefix=os.getenv("OPENALEX_SNAPSHOT_S3_PREFIX"),
+    )

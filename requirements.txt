@@ -14,12 +14,16 @@ babel==2.12.1
     # via sphinx
 black==23.3.0
     # via shed
-boto3==1.26.143
+boto3==1.26.144
     # via -r requirements.in
-botocore==1.29.143
+boto3-stubs==1.26.144
+    # via -r requirements.in
+botocore==1.29.144
     # via
     #   boto3
     #   s3transfer
+botocore-stubs==1.29.144
+    # via boto3-stubs
 certifi==2023.5.7
     # via requests
 charset-normalizer==3.1.0
@@ -89,6 +93,20 @@ markupsafe==2.1.2
     # via
     #   jinja2
     #   mako
+mypy-boto3-cloudformation==1.26.108
+    # via boto3-stubs
+mypy-boto3-dynamodb==1.26.115
+    # via boto3-stubs
+mypy-boto3-ec2==1.26.136
+    # via boto3-stubs
+mypy-boto3-lambda==1.26.122
+    # via boto3-stubs
+mypy-boto3-rds==1.26.144
+    # via boto3-stubs
+mypy-boto3-s3==1.26.127
+    # via boto3-stubs
+mypy-boto3-sqs==1.26.129
+    # via boto3-stubs
 mypy-extensions==1.0.0
     # via
     #   black
@@ -193,6 +211,8 @@ tomli==2.0.1
     #   autoflake
     #   black
     #   dagster
+toolz==0.12.0
+    # via -r requirements.in
 toposort==1.10
     # via dagster
 tqdm==4.65.0
@@ -201,6 +221,12 @@ tqdm==4.65.0
     #   terminusdb-client
 typeguard==2.13.3
     # via terminusdb-client
+types-awscrt==0.16.18
+    # via
+    #   botocore-stubs
+    #   types-s3transfer
+types-s3transfer==0.6.1
+    # via boto3-stubs
 typing-extensions==4.6.2
     # via
     #   alembic

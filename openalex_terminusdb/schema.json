@@ -1,79 +1,17 @@
 [
   {
     "@type": "@context",
-    "@base": "https://openalex.polyneme.xyz/i/",
-    "@schema": "https://openalex.polyneme.xyz/s#"
+    "@base": "https://svc.polyneme.xyz/openalex/data/",
+    "@schema": "https://svc.polyneme.xyz/openalex/schema#"
   },
   {
-    "@id": "XConcept",
+    "@id": "Institution",
     "@type": "Class",
-    "@key": {
-      "@type": "Lexical",
-      "@fields": ["id"]
-    },
-    "id": "xsd:anyURI",
-    "wikidata": {"@type": "Optional", "@class": "xsd:anyURI"},
-    "display_name": "xsd:string",
-    "level": "xsd:unsignedByte",
-    "score": "xsd:float"
-  },
-  {
-    "@id":"AuthorSummaryStats",
-    "@type": "Class",
-    "2yr_mean_citedness": {
-      "@type": "Optional",
-      "@class": "xsd:float"
-    },
-    "h_index": {"@type":  "Optional", "@class": "xsd:unsignedShort"},
-    "i10_index": {"@type": "Optional", "@class": "xsd:unsignedShort"}
-  },
-  {
-    "@id":  "AuthorLastKnownInstitution",
-    "@type": "Class",
-    "@key": {
-      "@type": "Lexical",
-      "@fields": ["id"]
-    },
-    "id": "xsd:anyURI",
-    "ror": {"@type": "Optional", "@class": "xsd:anyURI"},
+    "@key": {"@type": "Lexical", "@fields": ["id"]},
+    "id": "xsd:string",
     "display_name": {"@type": "Optional", "@class": "xsd:string"},
-    "country_code": {"@type": "Optional", "@class": "xsd:string"},
-    "type": {"@type": "Optional", "@class": "xsd:string"}
-  },
-  {
-    "@id": "ExternalIDs",
-    "@type": "Class",
-    "mag": {
-      "@type": "Optional",
-      "@class": "xsd:integer"
-    },
-    "openalex": {
-      "@type": "Optional",
-      "@class": "xsd:anyURI"
-    },
-    "orcid": {
-      "@type": "Optional",
-      "@class": "xsd:anyURI"
-    },
-    "scopus": {
-      "@type": "Optional",
-      "@class": "xsd:anyURI"
-    },
-    "twitter": {
-      "@type": "Optional",
-      "@class": "xsd:anyURI"
-    },
-    "wikipedia": {
-      "@type": "Optional",
-      "@class": "xsd:anyURI"
-    }
-  },
-  {
-    "@id": "CitedByCountByYear",
-    "@type": "Class",
-    "year": "xsd:gYear",
-    "works_count": "xsd:nonNegativeInteger",
-    "cited_by_count": "xsd:nonNegativeInteger"
+    "display_name_acronyms": {"@type": "Set", "@class": "xsd:string"},
+    "display_name_alternatives": {"@type": "Set", "@class": "xsd:string"}
   },
   {
     "@type": "Class",
@@ -88,27 +26,111 @@
         "@label": "Author",
         "@comment": "Authors are people who create works.",
         "@properties": {
-          "cited_by_count": {
-            "@label": "number of citing works",
-            "@comment": "The total number of Works that cite a work this author has created."
+          "last_known_institution": {
+            "@label": "This author's last known institutional affiliation.",
+            "@comment": "In this context, \"last known\" means that we took all the Works where this author has an institutional affiliation, sorted them by publication date, and selected the most recent one."
           }
       }
       }
     ],
-    "cited_by_count": "xsd:nonNegativeInteger",
-    "counts_by_year": {"@type":  "Set", "@class": "CitedByCountByYear"},
-    "created_date": "xsd:date",
+    "id": "xsd:string",
+    "orcid": {"@type":  "Optional", "@class": "xsd:string"},
     "display_name": {"@type": "Optional", "@class": "xsd:string"},
     "display_name_alternatives": {"@type": "Set", "@class": "xsd:string"},
-    "id": "xsd:anyURI",
-    "ids": "ExternalIDs",
-    "orcid": {"@type":  "Optional","@class": "xsd:anyURI"},
-    "last_known_institution": {"@type":  "Optional","@class": "AuthorLastKnownInstitution"},
-    "summary_stats": "AuthorSummaryStats",
-    "updated_date": "xsd:dateTime",
-    "works_api_url": "xsd:anyURI",
-    "works_count": "xsd:nonNegativeInteger",
-    "most_cited_work": {"@type": "Optional", "@class": "xsd:string"},
-    "x_concepts": {"@type":  "Set", "@class": "XConcept"}
+    "last_known_institution": {"@type":  "Optional","@class": "Institution"}
+  },
+  {
+    "@id": "ScoredConcept",
+    "@type": "Class",
+    "@subdocument": [],
+    "@key": { "@type": "Random"},
+    "@inherits": ["Concept"],
+    "score": {"@type": "Optional", "@class": "xsd:float"}
+  },
+  {
+    "@id": "Concept",
+    "@type": "Class",
+    "@key": {"@type": "Lexical", "@fields": ["id"]},
+    "id": "xsd:string",
+    "display_name": {"@type": "Optional", "@class": "xsd:string"},
+    "description": {"@type": "Optional", "@class": "xsd:string"},
+    "ancestors": {"@type": "Set", "@class": "Concept"},
+    "related_concepts": {"@type": "Set", "@class": "ScoredConcept"},
+    "wikidata": {"@type": "Optional", "@class": "xsd:string"},
+    "level": {"@type": "Optional", "@class": "xsd:integer"}
+  },
+  {
+    "@id": "Source",
+    "@type": "Class",
+    "@key": {"@type": "Lexical", "@fields": ["id"]},
+    "id": "xsd:string",
+    "display_name": {"@type": "Optional", "@class": "xsd:string"},
+    "abbreviated_title": {"@type": "Optional", "@class": "xsd:string"},
+    "alternate_titles": {"@type": "Set", "@class": "xsd:string"},
+    "homepage_url": {"@type": "Optional", "@class": "xsd:string"},
+    "issn": {"@type": "Set", "@class": "xsd:string"},
+    "issn_l": {"@type": "Optional", "@class": "xsd:string"}
+  },
+  {
+    "@id": "Authorship",
+    "@type": "Class",
+    "@subdocument": [],
+    "@key": { "@type": "Random"},
+    "author": "Author",
+    "author_position": {"@type": "Optional", "@class": "xsd:string"},
+    "institutions": {"@type": "Set", "@class": "Institution"}
+  },
+  {
+    "@id": "Location",
+    "@type": "Class",
+    "@subdocument": [],
+    "@key": { "@type": "Random"},
+    "source": "Source",
+    "is_oa": {"@type": "Optional", "@class": "xsd:boolean"},
+    "landing_page_url": {"@type": "Optional", "@class": "xsd:string"},
+    "license": {"@type": "Optional", "@class": "xsd:string"},
+    "pdf_url": {"@type": "Optional", "@class": "xsd:string"},
+    "version": {"@type": "Optional", "@class": "xsd:string"}
+  },
+  {
+    "@id": "OpenAccess",
+    "@type": "Class",
+    "@subdocument": [],
+    "@key": { "@type": "Random"},
+    "is_oa": {"@type": "Optional", "@class": "xsd:boolean"},
+    "oa_status": {"@type": "Optional", "@class": "xsd:string"},
+    "oa_url": {"@type": "Optional", "@class": "xsd:string"},
+    "any_repository_has_fulltext": {"@type": "Optional", "@class": "xsd:boolean"}
+  },
+  {
+    "@id": "Identifiers",
+    "@type": "Class",
+    "@subdocument": [],
+    "@key": { "@type": "Random"},
+    "doi": {"@type": "Optional", "@class": "xsd:string"},
+    "mag": {"@type": "Optional", "@class": "xsd:integer"},
+    "openalex": {"@type": "Optional", "@class": "xsd:string"},
+    "pmid": {"@type": "Optional", "@class": "xsd:string"},
+    "pmcid": {"@type": "Optional", "@class": "xsd:string"}
+  },
+  {
+    "@id": "Work",
+    "@type": "Class",
+    "@key": {"@type": "Lexical", "@fields": ["id"]},
+    "id": "xsd:string",
+    "ids": {"@type": "Optional", "@class": "Identifiers"},
+    "doi": {"@type": "Optional", "@class": "xsd:string"},
+    "authorships": {"@type":  "Set","@class": "Authorship"},
+    "concepts": {"@type": "Set", "@class": "ScoredConcept"},
+    "title": {"@type": "Optional", "@class": "xsd:string"},
+    "type": {"@type": "Optional", "@class": "xsd:string"},
+    "related_works": {"@type": "Set", "@class": "Work"},
+    "referenced_works": {"@type": "Set", "@class": "Work"},
+    "publication_year": {"@type": "Optional", "@class": "xsd:integer"},
+    "publication_date": {"@type": "Optional", "@class": "xsd:string"},
+    "primary_location": {"@type": "Optional", "@class": "Location"},
+    "locations": {"@type": "Set", "@class": "Location"},
+    "best_oa_location": {"@type": "Optional", "@class": "Location"},
+    "open_access": {"@type": "Optional", "@class": "OpenAccess"}
   }
 ]
