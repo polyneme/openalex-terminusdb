@@ -12,7 +12,7 @@ from dagster import (
     Output,
 )
 from terminusdb_client import GraphType, WOQLClient, WOQLQuery as WQ
-from toolz import get_in, keyfilter, assoc
+from toolz import get_in, keyfilter, assoc, dissoc
 
 from openalex_terminusdb.config import (
     get_terminus_config,
@@ -164,7 +164,9 @@ def ingest_source_and_friends_by_id(
     }
 
     def pick_only_framed_for_field(doc, field, cls, multi=False):
-        if not multi:
+        if doc[field] is None:
+            return dissoc(doc, field)
+        elif not multi:
             if isinstance(doc[field], str):
                 return doc
 
@@ -197,7 +199,17 @@ def ingest_source_and_friends_by_id(
             for j, institution_subdoc in enumerate(authorship_subdoc["institutions"]):
                 institution_doc = mdb.institutions.find_one(
                     {"id": institution_subdoc["id"]}, projection["Institution"]
-                ) | {"@type": "Institution"}
+                )
+                # XXX for id:"https://openalex.org/W2041029907",
+                #     authorships.0.institutions.id is None (!) (in the 2023-03-28 snapshot)
+                if institution_doc is None:
+                    institution_doc = (
+                        {"id": institution_subdoc["id"]}
+                        if institution_subdoc["id"] is not None
+                        else {"id": "https://openalex.org/INull"}
+                    )
+
+                institution_doc |= {"@type": "Institution"}
                 tdb.update_document(institution_doc)
                 institution_iri = iri_from_class_and_id(
                     tdb, institution_doc["id"], "Institution"
@@ -208,7 +220,15 @@ def ingest_source_and_friends_by_id(
             context.log.info(f"Processing Work {work_doc['id']} authorship author...")
             author_doc = mdb.authors.find_one(
                 {"id": authorship_subdoc["author"]["id"]}, projection["Author"]
-            ) | {"@type": "Author"}
+            )
+            if author_doc is None:
+                author_doc = (
+                    {"id": authorship_subdoc["author"]["id"]}
+                    if authorship_subdoc["author"]["id"] is not None
+                    else {"id": "https://openalex.org/ANull"}
+                )
+
+            author_doc |= {"@type": "Author"}
             if "last_known_institution" in author_doc:
                 author_doc = pick_only_framed_for_field(
                     author_doc,
@@ -224,7 +244,14 @@ def ingest_source_and_friends_by_id(
         for i, concept_subdoc in enumerate(work_doc["concepts"]):
             concept_doc = mdb.concepts.find_one(
                 {"id": concept_subdoc["id"]}, projection["Concept"]
-            ) | {"@type": "Concept"}
+            )
+            if concept_doc is None:
+                concept_doc = (
+                    {"id": concept_subdoc["id"]}
+                    if concept_subdoc["id"] is not None
+                    else {"id": "https://openalex.org/CNull"}
+                )
+            concept_doc |= {"@type": "Concept"}
             if "ancestors" in concept_doc:
                 concept_doc = pick_only_framed_for_field(
                     concept_doc, "ancestors", "Concept", multi=True
@@ -241,12 +268,20 @@ def ingest_source_and_friends_by_id(
         for i, location_subdoc in enumerate(work_doc["locations"]):
             if location_source_subdoc := location_subdoc.get("source"):
                 context.log.info(f'OpenAlex URL: {location_source_subdoc["id"]}')
-                # TODO dear god, id:"https://openalex.org/S4306400194" isn't in Mongo.
-                #   But it's online at <https://api.openalex.org/sources/S4306400194>.
-                #   WTF.
                 source_doc = mdb.sources.find_one(
                     {"id": location_source_subdoc["id"]}, projection["Source"]
-                ) | {"@type": "Source"}
+                )
+                # XXX id:"https://openalex.org/S4306400194" isn't in Mongo, but it's online.
+                #     Treating ETL for such sources like `related_works` and `referenced_works`,
+                #     i.e. "id-only-okay records", for now.
+                if source_doc is None:
+                    source_doc = (
+                        {"id": location_source_subdoc["id"]}
+                        if location_source_subdoc["id"] is not None
+                        else {"id": "https://openalex.org/SNull"}
+                    )
+
+                source_doc |= {"@type": "Source"}
                 tdb.update_document(source_doc)
                 source_iri = iri_from_class_and_id(tdb, source_doc["id"], "Source")
                 context.log.info(source_iri)
