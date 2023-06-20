@@ -9,6 +9,7 @@
     "@type": "Class",
     "@key": {"@type": "Lexical", "@fields": ["id"]},
     "id": "xsd:string",
+    "ids": {"@type": "Optional", "@class": "Identifiers"},
     "display_name": {"@type": "Optional", "@class": "xsd:string"},
     "display_name_acronyms": {"@type": "Set", "@class": "xsd:string"},
     "display_name_alternatives": {"@type": "Set", "@class": "xsd:string"}
@@ -108,10 +109,14 @@
     "@subdocument": [],
     "@key": { "@type": "Random"},
     "doi": {"@type": "Optional", "@class": "xsd:string"},
+    "grid": {"@type": "Optional", "@class": "xsd:string"},
     "mag": {"@type": "Optional", "@class": "xsd:integer"},
     "openalex": {"@type": "Optional", "@class": "xsd:string"},
     "pmid": {"@type": "Optional", "@class": "xsd:string"},
-    "pmcid": {"@type": "Optional", "@class": "xsd:string"}
+    "pmcid": {"@type": "Optional", "@class": "xsd:string"},
+    "ror": {"@type": "Optional", "@class": "xsd:string"},
+    "wikidata": {"@type": "Optional", "@class": "xsd:string"},
+    "wikipedia": {"@type": "Optional", "@class": "xsd:string"}
   },
   {
     "@id": "Work",
