@@ -69,7 +69,9 @@
     "display_name": {"@type": "Optional", "@class": "xsd:string"},
     "abbreviated_title": {"@type": "Optional", "@class": "xsd:string"},
     "alternate_titles": {"@type": "Set", "@class": "xsd:string"},
-    "homepage_url": {"@type": "Optional", "@class": "xsd:string"}
+    "homepage_url": {"@type": "Optional", "@class": "xsd:string"},
+    "type": {"@type": "Optional", "@class": "xsd:string"},
+    "host_organization": {"@type": "Optional", "@class": "xsd:string"}
   },
   {
     "@id": "Authorship",
