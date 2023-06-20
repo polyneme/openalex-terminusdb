@@ -5,11 +5,46 @@
     "@schema": "https://svc.polyneme.xyz/openalex/schema#"
   },
   {
+    "@id": "HostOrganization",
+    "@type": "Class",
+    "@abstract" : [],
+    "id": "xsd:string",
+    "ids": {"@type": "Optional", "@class": "Identifiers"}
+  },
+  {
+    "@id": "Publisher",
+    "@type": "Class",
+    "@inherits": [
+      "HostOrganization"
+    ],
+    "@key": {
+      "@type": "Lexical",
+      "@fields": [
+        "id"
+      ]
+    },
+    "alternate_titles": {
+      "@type": "Set",
+      "@class": "xsd:string"
+    },
+    "display_name": {
+      "@type": "Optional",
+      "@class": "xsd:string"
+    },
+    "hierarchy_level": {
+      "@type": "Optional",
+      "@class": "xsd:integer"
+    },
+    "parent_publisher": {
+      "@type": "Optional",
+      "@class": "Publisher"
+    }
+  },
+  {
     "@id": "Institution",
     "@type": "Class",
+    "@inherits": ["HostOrganization"],
     "@key": {"@type": "Lexical", "@fields": ["id"]},
-    "id": "xsd:string",
-    "ids": {"@type": "Optional", "@class": "Identifiers"},
     "display_name": {"@type": "Optional", "@class": "xsd:string"},
     "display_name_acronyms": {"@type": "Set", "@class": "xsd:string"},
     "display_name_alternatives": {"@type": "Set", "@class": "xsd:string"}
@@ -71,7 +106,7 @@
     "alternate_titles": {"@type": "Set", "@class": "xsd:string"},
     "homepage_url": {"@type": "Optional", "@class": "xsd:string"},
     "type": {"@type": "Optional", "@class": "xsd:string"},
-    "host_organization": {"@type": "Optional", "@class": "xsd:string"}
+    "host_organization": {"@type": "Optional", "@class": "HostOrganization"}
   },
   {
     "@id": "Authorship",
