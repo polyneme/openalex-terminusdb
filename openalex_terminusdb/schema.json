@@ -44,7 +44,7 @@
     "@type": "Class",
     "@subdocument": [],
     "@key": { "@type": "Random"},
-    "@inherits": ["Concept"],
+    "concept": "Concept",
     "score": {"@type": "Optional", "@class": "xsd:float"}
   },
   {
