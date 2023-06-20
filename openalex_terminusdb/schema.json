@@ -65,12 +65,11 @@
     "@type": "Class",
     "@key": {"@type": "Lexical", "@fields": ["id"]},
     "id": "xsd:string",
+    "ids": {"@type": "Optional", "@class": "Identifiers"},
     "display_name": {"@type": "Optional", "@class": "xsd:string"},
     "abbreviated_title": {"@type": "Optional", "@class": "xsd:string"},
     "alternate_titles": {"@type": "Set", "@class": "xsd:string"},
-    "homepage_url": {"@type": "Optional", "@class": "xsd:string"},
-    "issn": {"@type": "Set", "@class": "xsd:string"},
-    "issn_l": {"@type": "Optional", "@class": "xsd:string"}
+    "homepage_url": {"@type": "Optional", "@class": "xsd:string"}
   },
   {
     "@id": "Authorship",
@@ -109,7 +108,10 @@
     "@subdocument": [],
     "@key": { "@type": "Random"},
     "doi": {"@type": "Optional", "@class": "xsd:string"},
+    "fatcat": {"@type": "Optional", "@class": "xsd:string"},
     "grid": {"@type": "Optional", "@class": "xsd:string"},
+    "issn": {"@type": "Optional", "@class": "xsd:string"},
+    "issn_l": {"@type": "Optional", "@class": "xsd:string"},
     "mag": {"@type": "Optional", "@class": "xsd:integer"},
     "openalex": {"@type": "Optional", "@class": "xsd:string"},
     "pmid": {"@type": "Optional", "@class": "xsd:string"},
