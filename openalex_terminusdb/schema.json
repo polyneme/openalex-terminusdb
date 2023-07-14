@@ -163,7 +163,6 @@
     "@key": {"@type": "Lexical", "@fields": ["id"]},
     "id": "xsd:string",
     "ids": {"@type": "Optional", "@class": "Identifiers"},
-    "doi": {"@type": "Optional", "@class": "xsd:string"},
     "authorships": {"@type":  "Set","@class": "Authorship"},
     "concepts": {"@type": "Set", "@class": "ScoredConcept"},
     "title": {"@type": "Optional", "@class": "xsd:string"},
